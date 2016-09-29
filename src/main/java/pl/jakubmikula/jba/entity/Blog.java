@@ -20,10 +20,6 @@ public class Blog {
 	
 	private String name;
 
-	public Integer getId() {
-		return id;
-	}
-
 	@ManyToOne
 	@JoinColumn(name="user_id")
 	private User user;
@@ -47,6 +43,10 @@ public class Blog {
 		this.items = items;
 	}
 
+	public Integer getId() {
+		return id;
+	}
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}

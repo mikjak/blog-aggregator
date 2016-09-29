@@ -19,10 +19,6 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>*.html</url-pattern>
@@ -30,5 +26,9 @@
 		<url-pattern>*.json</url-pattern>
 		<url-pattern>*.xml</url-pattern>
 	</servlet-mapping>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 
 </web-app>
